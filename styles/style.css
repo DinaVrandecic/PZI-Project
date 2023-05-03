@@ -1,0 +1,140 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+}
+#main-conatiner {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-column-gap: 15px;
+
+  margin: 0px auto;
+  max-width: 700px;
+}
+
+.first-row {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #main-conatiner {
+    grid-template-columns: 1fr;
+  }
+}
+
+#profile-conatainer {
+  color: rgb(3, 3, 57);
+  background-color: rgba(206, 206, 219, 0.55);
+  padding: 30px;
+  border: 3px solid lightslategray;
+  border-radius: 5%;
+
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+
+#profile-conatainer img {
+  width: 130px;
+  height: 140px;
+  border: 4px solid hsl(210, 13%, 36%);
+  border-radius: 50%;
+}
+
+#profile-conatainer p {
+  margin: 10px;
+}
+#post-button {
+  font-size: medium;
+  background-color: rgba(206, 206, 219, 0.55);
+  border-radius: 10px;
+  padding: 10px;
+  border: 3px solid lightslategray;
+  color: rgb(3, 3, 57);
+  cursor: pointer;
+}
+#post-button:hover {
+  background-color: white;
+  border-color: lightgray;
+  color: darkslategray;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-card {
+  margin-top: 10px;
+  border: 2px solid lightslategray;
+  border-radius: 10px;
+  background-color: white;
+}
+.post-header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.post-header span {
+  flex-grow: 1;
+  padding: 15px;
+}
+.post-header i {
+  text-align: right;
+  cursor: pointer;
+}
+.post-header i:hover {
+  color: red;
+}
+
+.post-footer {
+  padding: 5px 10px;
+}
+.fa-bookmark {
+  text-align: right;
+}
+.liked {
+  margin-left: 5px;
+  flex-grow: 1;
+  text-align: left;
+}
+.post-footer p {
+  padding: 5px;
+  margin: 0px;
+}
+
+.posted-photo {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  text-align: center;
+}
+.clickable-icon {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+.clickable-icon:hover {
+  transform: scale(1.2);
+}
+
+.comment-button {
+  margin-top: 5px;
+  background-color: rgba(206, 206, 219, 0.55);
+  border-radius: 10px;
+  border: 1px solid lightslategray;
+  color: rgb(3, 3, 57);
+  cursor: pointer;
+}
+.comment-button:hover {
+  background-color: whitesmoke;
+  border-color: lightgray;
+  color: darkslategray;
+}
